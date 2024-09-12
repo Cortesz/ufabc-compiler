@@ -19,38 +19,12 @@
                 <dependency>
                         <groupId>org.antlr</groupId>
                         <artifactId>antlr4</artifactId>
+                        <scope>system</scope>
                         <version>4.13.2</version>
+                        <systemPath>${basedir}/antlr-4.13.2-complete.jar</systemPath>
                 </dependency>
                 
     </dependencies>
-
-    <build>
-    <plugins>
-        <!-- Plugin para execução da classe Main -->
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>3.0.0</version>
-            <configuration>
-                <mainClass>java.io.compiler.main.MainClass</mainClass> <!-- Substitua pelo caminho correto do seu pacote -->
-            </configuration>
-        </plugin>
-
-        <!-- Plugin do ANTLR (se necessário para gerar os arquivos) -->
-        <plugin>
-            <groupId>org.antlr</groupId>
-            <artifactId>antlr4-maven-plugin</artifactId>
-            <version>4.9.2</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>antlr4</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
-</build>
 
     <repositories>
                 <repository>

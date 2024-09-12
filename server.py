@@ -20,7 +20,7 @@ def upload_file():
     file_path = os.path.join(UPLOAD_FOLDER, file_id + '_' + file.filename)
     file.save(file_path)
 
-    subprocess.run(['java', '-cp', 'antlr-4.13.2-complete.jar:bin/io/compiler/main', 'io.compiler.main.MainClass', file_path])
+    subprocess.run(['java', '-cp', 'target/ufabc-compiler-1.0-SNAPSHOT.jar:antlr-4.13.2-complete.jar', 'src/main/java/io/compiler/main/MainClass.java', file_path])
 
     return jsonify({'file_id': file_id, 'filename': file.filename}), 202
 
