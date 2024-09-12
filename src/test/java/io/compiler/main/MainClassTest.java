@@ -11,7 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class MainClass {
+public class MainClassTest {
     public static void main(String[] args) {
 
         String filePath = "ufabc-compiler/inputs/teste.in";
