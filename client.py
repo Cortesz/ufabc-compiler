@@ -13,9 +13,11 @@ print(response_data)
 
 status_url = f'http://localhost:5000/files/{file_id}'
 while True:
+    print("Checando com servidor...")
     status_response = requests.get(status_url)
     status_data = status_response.json()
     if status_data['status'] == 'completed':
+        print("OK.")
         break
     time.sleep(5)
 
@@ -23,9 +25,19 @@ java_file_url = f'http://localhost:5000/files/{file_id}/java'
 c_file_url = f'http://localhost:5000/files/{file_id}/c'
 
 java_response = requests.get(java_file_url)
-with open(filename.replace('.in', '.java'), 'wb') as f:
-    f.write(java_response.content)
+if java_response.status_code == 200:
+    with open(filename.replace('.in', '.java'), 'wb') as f:
+        f.write(java_response.content)
+    print("Arquivo Java criado.")
+else:
+    print("Falha ao baixar arquivo Java.")
 
 c_response = requests.get(c_file_url)
-with open(filename.replace('.in', '.c'), 'wb') as f:
-    f.write(c_response.content)
+if c_response.status_code == 200:
+    with open(filename.replace('.in', '.c'), 'wb') as f:
+        f.write(c_response.content)
+    print("Arquivo C criado.")
+else:
+    print("Falha ao baixar arquivo C.")
+
+print("Programa terminado")
