@@ -13,7 +13,7 @@ Possui as seguintes funcionalidades:
 - Entrada e Saida de dados
 
 ## Checklist
-| Item obrigatorio | Definição| Implementados
+| Item obrigatório | Definição| Implementados
 | ------------- | ------------- | ------------- |
 | 1  | Possui 2 tipos de variáveis  | :white_check_mark: |	
 | 2  | Possui a estrutura If.. else  | :white_check_mark:|
