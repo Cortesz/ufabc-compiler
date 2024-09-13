@@ -1,0 +1,6 @@
+programa compilerTest
+	declare a: number;
+	inicio
+		leia(a);
+	fim
+fimprog

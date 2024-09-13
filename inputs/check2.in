@@ -1,0 +1,14 @@
+programa compilerTest
+	declare a,b: number;
+	inicio
+    leia(a);
+    leia(b);
+		se (a > 5) entao
+			se (b > 4) entao
+				escreva("maior que 5");
+			fimse
+		senao
+		    escreva("menor que 5");
+		fimse
+	fim
+fimprog

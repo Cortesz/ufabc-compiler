@@ -1,0 +1,6 @@
+programa compilerTest
+	declare a: number;
+	inicio
+        a := 3 + 4 + 1 + 0;
+	fim
+fimprog

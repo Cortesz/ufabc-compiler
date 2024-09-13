@@ -38,7 +38,7 @@ public class Program {
         for (String varId : symbolTable.keySet()) {
             Var var = symbolTable.get(varId);
             if(var.getType() == Types.NUMBER){
-                str.append("int ");
+                str.append("double ");
             } else{ 
                 str.append("String ");
             }
@@ -57,15 +57,16 @@ public class Program {
         StringBuilder str = new StringBuilder();
         str.append("#include <stdio.h> \n");
         str.append("#include <stdlib.h> \n");
+        str.append("#include <string.h> \n");
         str.append("int main() {\n");
         for (String varId : symbolTable.keySet()) {
             Var var = symbolTable.get(varId);
             if(var.getType() == Types.NUMBER){
-                str.append("int ");
+                str.append("double ");
                 str.append(var.getId()+";\n");
             } else{ 
                 str.append("char ");
-                str.append(var.getId()+"[];\n");
+                str.append(var.getId()+"[50] = \"\";\n");
             }
         }
         for (Command cmd : commandList) {

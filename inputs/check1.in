@@ -1,0 +1,13 @@
+programa compilerTest
+	declare a,b: number;
+    declare x: text;
+	inicio
+		leia(a);
+		escreva(a);
+        b := 2.5;
+        escreva(b);
+		x := "ufabc";
+        escreva(x);
+		escreva("String");
+	fim
+fimprog

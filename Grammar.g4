@@ -122,7 +122,7 @@ cmdAttrib : ID { if (!isDeclared(_input.LT(-1).getText())) { throw new UFABCSema
                    symbolTable.get(_input.LT(-1).getText()).setInitialized(true); 
                    leftType = symbolTable.get(_input.LT(-1).getText()).getType(); 
                    strExprStack.push(""); 
-                   attribCommandStack.push(new AttributeCommand(symbolTable.get(_input.LT(-1).getText()).getId())); } 
+                   attribCommandStack.push(new AttributeCommand(symbolTable.get(_input.LT(-1).getText()).getId(),symbolTable.get(_input.LT(-1).getText()).getType())); } 
               OP_AT expr { attribCommandStack.peek().setContent(strExprStack.pop()); } 
               PV 
               { if (leftType.getValue() < rightType.getValue()) { throw new UFABCSemanticException("Type Mismatch on Assignment"); } 
@@ -136,7 +136,7 @@ cmdLeitura : 'leia' AP ID { if (!isDeclared(_input.LT(-1).getText())) { throw ne
                       FP PV
             ;
 
-cmdEscrita : 'escreva' AP termo { Command cmdWrite = new WriteCommand(_input.LT(-1).getText()); stack.peek().add(cmdWrite); } FP PV 
+cmdEscrita : 'escreva' AP termo { Command cmdWrite = new WriteCommand(_input.LT(-1).getText(),symbolTable); stack.peek().add(cmdWrite); } FP PV 
               { rightType = null; }
             ;
 

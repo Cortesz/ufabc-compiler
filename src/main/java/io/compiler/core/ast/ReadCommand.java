@@ -31,7 +31,10 @@ public class ReadCommand extends Command{
 
     @Override
     public String generateTargetC() {
-        return "scanf(\"\",&"+var.getId()+");\n";
+        if (var.getType() == Types.NUMBER) {
+            return "scanf(\"%lf\",&"+var.getId()+");\n";
+        }
+        return "scanf(\"%s\",&"+var.getId()+");\n";
     }
 
 }

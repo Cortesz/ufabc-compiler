@@ -1,7 +1,10 @@
 package io.compiler.core.ast;
 
+import io.compiler.types.Types;
+
 public class AttributeCommand extends Command{
     private String varId;
+    private Types varType;
     private String content;
 
     public String getVarId() {
@@ -21,14 +24,27 @@ public class AttributeCommand extends Command{
     }
 
     
+    public Types getVarType() {
+        return varType;
+    }
 
-    public AttributeCommand(String varId, String content) {
+    public void setVarType(Types varType) {
+        this.varType = varType;
+    }
+
+    public AttributeCommand(String varId,Types varType, String content) {
         this.varId = varId;
+        this.varType = varType;
         this.content = content;
     }
 
     public AttributeCommand(String varId) {
         this.varId = varId;
+    }
+
+    public AttributeCommand(String varId, Types varType){
+        this.varId = varId;
+        this.varType = varType;
     }
 
     public AttributeCommand() {
@@ -41,6 +57,11 @@ public class AttributeCommand extends Command{
 
     @Override
     public String generateTargetC() {
-        return generateTargetJava();
+            if (varType == Types.TEXT) {
+                return "strcpy("+this.varId+","+this.getContent()+");\n";
+            }
+            return this.getVarId() + " = "+ this.getContent() + ";\n";
     }
+
+
 }
