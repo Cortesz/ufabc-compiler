@@ -34,7 +34,7 @@ Possui as seguintes funcionalidades:
 > [!TIP]
 > Comando para compilar utilizando o ANTLR:
 >```
->java -cp antlr-4.13.2-complete.jar org.antlr.v4.Tool Grammar.g4 -o src/io/compiler/core -package io.compiler.core
+>java -cp antlr-4.13.2-complete.jar org.antlr.v4.Tool Grammar.g4 -o src/main/java/io/compiler/core -package io.compiler.core
 >```
 
 > [!TIP]
