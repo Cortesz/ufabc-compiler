@@ -1,4 +1,5 @@
-// Generated from /home/lucasabdalla/Documentos/GitHub/ufabc-compiler/Grammar.g4 by ANTLR 4.13.1
+// Generated from Grammar.g4 by ANTLR 4.13.2
+package io.compiler.core;
 
     import java.util.ArrayList;
     import java.util.HashMap;
@@ -19,7 +20,7 @@ import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue", "this-escape"})
 public class GrammarLexer extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.13.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -122,6 +123,14 @@ public class GrammarLexer extends Lexer {
 	        for (String id : symbolTable.keySet()) {
 	            if (!usedVariables.contains(id)) {
 	                System.out.println("Warning: Variable " + id + " declared but not used.");
+	            }
+	        }
+	    }
+
+	    public void checkUninitializedVariables() {
+	        for (String id : symbolTable.keySet()) {
+	            if (!symbolTable.get(id).isInitialized()) {
+	                System.out.println("Warning: Variable " + id + " declared but not initialized.");
 	            }
 	        }
 	    }

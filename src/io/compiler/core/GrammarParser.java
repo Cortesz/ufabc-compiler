@@ -133,14 +133,6 @@ public class GrammarParser extends Parser {
 	        }
 	    }
 
-	    public void checkUninitializedVariables() {
-	        for (String id : symbolTable.keySet()) {
-	            if (!symbolTable.get(id).isInitialized()) {
-	                System.out.println("Warning: Variable " + id + " declared but not initialized.");
-	            }
-	        }
-	    }
-
 	    public Program getProgram() {
 	        return this.program;
 	    }
@@ -231,7 +223,6 @@ public class GrammarParser extends Parser {
 			match(T__3);
 			 
 			                checkUnusedVariables();
-			                checkUninitializedVariables();
 			                program.setSymbolTable(symbolTable);
 			                program.setCommandList(stack.pop());
 			            
@@ -763,7 +754,7 @@ public class GrammarParser extends Parser {
 			                   symbolTable.get(_input.LT(-1).getText()).setInitialized(true); 
 			                   leftType = symbolTable.get(_input.LT(-1).getText()).getType(); 
 			                   strExprStack.push(""); 
-			                   attribCommandStack.push(new AttributeCommand(symbolTable.get(_input.LT(-1).getText()).getId())); 
+			                   attribCommandStack.push(new AttributeCommand(symbolTable.get(_input.LT(-1).getText()).getId(),symbolTable.get(_input.LT(-1).getText()).getType())); 
 			setState(144);
 			match(OP_AT);
 			setState(145);
@@ -873,7 +864,7 @@ public class GrammarParser extends Parser {
 			match(AP);
 			setState(159);
 			termo();
-			 Command cmdWrite = new WriteCommand(_input.LT(-1).getText()); stack.peek().add(cmdWrite); 
+			 Command cmdWrite = new WriteCommand(_input.LT(-1).getText(),symbolTable); stack.peek().add(cmdWrite); 
 			setState(161);
 			match(FP);
 			setState(162);

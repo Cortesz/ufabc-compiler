@@ -1,0 +1,18 @@
+programa compilerTest
+	declare a,b: number;
+	inicio
+		leia(a);
+        leia(b);
+        faca{
+			escreva("A");
+			a := a-1;
+			} enquanto(a>0);
+
+
+		enquanto(b>1){
+				escreva("B");
+				b:= b-1; 
+		}
+
+	fim
+fimprog

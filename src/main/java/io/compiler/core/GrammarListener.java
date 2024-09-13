@@ -1,4 +1,5 @@
-// Generated from /home/lucasabdalla/Documentos/GitHub/ufabc-compiler/Grammar.g4 by ANTLR 4.13.1
+// Generated from Grammar.g4 by ANTLR 4.13.2
+package io.compiler.core;
 
     import java.util.ArrayList;
     import java.util.HashMap;

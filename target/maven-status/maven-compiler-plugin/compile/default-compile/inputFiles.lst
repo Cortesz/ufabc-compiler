@@ -1,0 +1,16 @@
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/GrammarBaseListener.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/GrammarLexer.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/GrammarListener.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/GrammarParser.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/ast/AttributeCommand.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/ast/Command.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/ast/DoWhileCommand.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/ast/IfCommand.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/ast/Program.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/ast/ReadCommand.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/ast/WhileCommand.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/ast/WriteCommand.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/core/exceptions/UFABCSemanticException.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/main/MainClass.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/types/Types.java
+/home/cortes/Documents/UFABC/Compiladores/CompilerMaven/ufabc-compiler/src/main/java/io/compiler/types/Var.java

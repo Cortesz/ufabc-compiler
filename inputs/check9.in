@@ -1,0 +1,6 @@
+programa compilerTest
+	declare a: number;
+	inicio
+		escreva("String");
+	fim
+fimprog

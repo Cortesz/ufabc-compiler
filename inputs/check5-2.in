@@ -1,0 +1,6 @@
+programa compilerTest
+	declare a: number;
+	inicio
+        a := 1 + "ufabc";
+	fim
+fimprog
