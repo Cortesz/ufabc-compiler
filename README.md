@@ -12,8 +12,25 @@ Possui as seguintes funcionalidades:
 - Numeros inteiros e decimais
 - Entrada e Saida de dados
 
+## Checklist
+| Item Obrigatorio | Definicao| Implementados
+| ------------- | ------------- | ------------- |
+| 1  | Possui 2 tipos de variáveis  | :white_check_mark: |	
+| 2  | Possui a estrutura If.. else  | :white_check_mark:|
+| 3  | Possui estrutura de controle while/do while  | :white_check_mark:|
+| 4  | Operações Aritméticas executadas corretamente  | :white_check_mark:|
+| 5  | Atribuições realizadas corretamente  | :white_check_mark:|
+| 6  | Possui operações de Entrada e Saída  | :white_check_mark:|
+| 7  | Aceita números decimais  | :white_check_mark:|
+| 8  | Verificar se a variável já foi previamente declarada  | :white_check_mark:|
+| 9  | Verificar se a variável foi declarada e não foi usada  | :white_check_mark:|
+| 10  | Verificar se uma variável está sendo usada sem ter valor inicial  | :white_check_mark:|
 
+## Opcionais
+- Geração de várias linguagens-alvo
+- Uma API Rest para implementação do compilador
 
+## Run
 > [!TIP]
 > Comando para compilar utilizando o ANTLR:
 >```
