@@ -2,7 +2,7 @@
 Projeto da disciplina de compiladores da Universidade Federal do ABC.
 
 ### Alunos
-Lucas da Silva Abdalla RA: 11201920265
+Lucas da Silva Abdalla RA: 11201920265  
 Luccas Henrique Figueira Cortes RA: 11202130811
 
 ## Compilador
