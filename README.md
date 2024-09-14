@@ -34,6 +34,9 @@ Possui as seguintes funcionalidades:
 - Geração de várias linguagens-alvo
 - Uma API Rest para implementação do compilador
 
+## Link para o vídeo
+https://youtu.be/eCkRA1dR2Ww
+
 ## Run
 > [!TIP]
 > Comando para compilar utilizando o ANTLR:
