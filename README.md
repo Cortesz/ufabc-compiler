@@ -1,6 +1,10 @@
 # ufabc-compiler
 Projeto da disciplina de compiladores da Universidade Federal do ABC.
 
+### Alunos
+Lucas da Silva Abdalla RA: 11201920265
+Luccas Henrique Figueira Cortes RA: 11202130811
+
 ## Compilador
 O Projeto tem como base o curso de compiladores do Professor Isidro[^1] e utiliza a gramatica *Grammar.g4* para gerar um analisador lexico e um parser utilizando a ferramenta ANTLR.
 Possui as seguintes funcionalidades:
@@ -43,4 +47,8 @@ Possui as seguintes funcionalidades:
 >java -cp target/ufabc-compiler-1.0-SNAPSHOT.jar:antlr-4.13.2-complete.jar src/main/java/io/compiler/main/MainClass.java arquivo
 >```
 
-[^1]:https://youtube.com/playlist?list=PLjcmNukBom6--0we1zrpoUE2GuRD-Me6W&si=RJLZ6JC0Wmu0usvJ
+> [!TIP]
+> É necessário baixar o flask para executar o servidor e o cliente:
+>```
+>pip install flask
+>```
